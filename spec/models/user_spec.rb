@@ -14,6 +14,14 @@ RSpec.describe User, type: :model do
       end
     end
 
+    describe 'password is less than 5 character' do
+      it 'should respond with password under min length error' do
+        @user = User.create(:email => 'test@test.com', :password => 'pass', :password_confirmation => 'pass')
+
+        expect(@user.errors.full_messages).to include("Password is too short (minimum is 5 characters)")
+      end
+    end
+
     describe 'blank password confirmation' do
       it 'should respond with blank password confirmation error message' do
         @user = User.create(:email => 'test@test.com', :password => 'password', :password_confirmation => nil)
