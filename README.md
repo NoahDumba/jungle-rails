@@ -4,7 +4,11 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Screenshots
 
-!["Screenshot of products page"]
+!["Screenshot of products page"](https://raw.githubusercontent.com/NoahDumba/jungle-rails/master/public/images/products.png)
+
+!["Screenshot of product details page"](https://raw.githubusercontent.com/NoahDumba/jungle-rails/master/public/images/details.png)
+
+!["Screenshot of cart page"](https://raw.githubusercontent.com/NoahDumba/jungle-rails/master/public/images/cart.png)
 
 ## Setup
 
